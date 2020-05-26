@@ -4,7 +4,7 @@ import './index.css';
 
 
 ReactDOM.render(
-  <h1 class="text-success">blabla</h1>,
+  <h1 class="text-success">SE N TIVER VERDE TU TA BUGADO</h1>,
   document.getElementById('root')
 );
 
