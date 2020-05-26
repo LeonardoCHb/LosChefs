@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import Header from './components/Header'
 import './index.css';
 
 
 ReactDOM.render(
-  <h1 class="text-success">SE N TIVER VERDE TU TA BUGADO</h1>,
+  <div>
+    <Header/>
+  </div>,
   document.getElementById('root')
 );
 
