@@ -1,0 +1,9 @@
+@font-face{
+    font-family: 'Kaushan Script' ;
+    src: url(../../fonts/Kaushan_Script/KaushanScript-Regular.ttf);
+}
+
+* {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+}

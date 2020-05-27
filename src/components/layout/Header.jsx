@@ -1,13 +1,20 @@
 import React from 'react'
 
 import { NavLink } from 'react-router-dom'
+import './styles/Header.css';
 
 function Header(){
     return (
-      <nav className=" navbar navbar-light navbar-expand-lg bg-light">
+      /*tras responsividade a nav em certos tipos de tamanho e alguns estilos gerais*/
+      <nav className=" navbar navbar-expand-sm navbar-dark bg-dark text-transparent">
+
         <NavLink to="" className="navbar-brand">Pizzaria X</NavLink>
 
-           <div className="collapse navbar-collapse">
+         <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+           <span className="navbar-toggler-icon"></span>
+         </button>
+           <div className="collapse navbar-collapse" id="navbarMenu">
+
               <ul className="navbar-nav ml-auto">
                   <li className="nav-item">
                       <NavLink to="/" className="nav-link">Home</NavLink>
