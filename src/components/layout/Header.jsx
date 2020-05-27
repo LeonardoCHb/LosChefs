@@ -1,29 +1,30 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-function Header (){
+function Header(){
     return(
         <nav className="navbar-light">
-            <a href="#" className="navbar-brand">Pizzaria X</a>
-            <div className="collapse navbar-collapse">
-                <ul className="navbar-nav">
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">Home</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">Faca seu Pedido</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link">Menu</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link">Contatos</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link">Sobre Nos</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <NavLink to="" className="navbar-brand">Pizzaria X</NavLink>
+        <div >
+            <ul className="navbar-nav ">
+                <li className="nav-item">
+                    <NavLink to="/" className="nav-NavLink">Home</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink to="/SeuPedido" className="nav-NavLink">Faca seu Pedido</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink to="/Cardapio" className="nav-NavLink">Cardapio</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink to="/Contatos" className="nav-NavLink">Contatos</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink to="/SobreNos" className="nav-NavLink">Sobre Nos</NavLink>
+                </li>
+            </ul>
+        </div>
+    </nav>
     )
 }
 
