@@ -24,7 +24,7 @@ function Header() {
                             <NavLink to="/SeuPedido" className="nav-link">Faca seu Pedido</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/Cardapio" className="nav-link">Cardapio</NavLink>
+                            <NavLink to="/Reservas" className="nav-link">Reservas</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to="/Contatos" className="nav-link">Contatos</NavLink>
