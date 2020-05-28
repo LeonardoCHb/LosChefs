@@ -3,7 +3,14 @@
     src: url(../../fonts/Kaushan_Script/KaushanScript-Regular.ttf);
 }
 
+/*Estilos Globais*/
 * {
     font-family: 'Kaushan Script', cursive;
-    font-size: 20px;
+    font-size: 25px;
+    color: black !important;
+}
+
+/*Transparencia do bg nav*/
+.bg-dark {
+    background-color: transparent !important;
 }
