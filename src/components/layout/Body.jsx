@@ -22,42 +22,42 @@ function Body() {
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src={recepcao} alt="First slide"/>
+            <img class="d-block w-100 img-fluid" src={recepcao} alt="First slide"/>
             <div class="carousel-caption d-none d-md-block">
                 <h1>PIZZA X</h1>
                 <p>A melhor Pizza do MUNDO</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src={Pizza_Deliciosa} alt="Second slide"/>
+            <img class="d-block w-100 img-fluid" src={Pizza_Deliciosa} alt="Second slide"/>
             <div className="carousel-caption d-none d-md-block">
                 <h1>A MELHOR PIZZARIA DE BRASILIA!!</h1>
                 <p>MIAN MIAN DELICIOUS WOOOOO</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src={FIRE} alt="Third slide"/>
+            <img class="d-block w-100 img-fluid" src={FIRE} alt="Third slide"/>
             <div className="carousel-caption d-none d-md-block">
                 <h1>O MELHOR PREPARO PARA VOCE!</h1>
                 <p>Contamos com uma estrutura especializada para o melhor atendimento ao cliente</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src={kitchen} alt="Third slide"/>
+            <img class="d-block w-100 img-fluid" src={kitchen} alt="Third slide"/>
             <div className="carousel-caption d-none d-md-block">
                 <h1>Profissionais extremamente qualificados</h1>
                 <p>Os grandes chefes de Brasilia estao aqui!</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src={Pizza4k} alt="Third slide"/>
+            <img class="d-block w-100 img-fluid" src={Pizza4k} alt="Third slide"/>
             <div className="carousel-caption d-none d-md-block">
                 <h1>DO SEU GOSTO!</h1>
                 <p>Aqui voce pode personalizar a pizza da forma que voce quiser!</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src={ingredients} alt="Third slide"/>
+            <img class="d-block w-100 img-fluid" src={ingredients} alt="Third slide"/>
             <div className="carousel-caption d-none d-md-block">
                 <h1>Selecionados para voce!</h1>
                 <p>Nossos ingredients sao cultivaos em fazendas 100% organicas</p>
