@@ -1,17 +1,20 @@
 import React from 'react'
+import './styles/FacaSeuPedido.css'
 
 //funçao que adiciona os items(li) do cardapio no compnente principal do faça seu pedido
 function PutTyperOfFood(props) {
         return (
-            <li className="list-group-item d-flex flex-row">
-                <input type="checkbox" className=""/>
-                <div>
+            <li className="list-group-item d-flex justify-content-between">
+                <div className="d-flex div-item w-75">
+                    <input type="checkbox" />
                     <label>
-                        <h5>{props.name}</h5>
+                        <h5 id={props.type+"-"+props.name}>{props.name}</h5>
                         <small class="form-text text-muted">{props.text}</small>
                     </label>
                 </div>
-                <span className="">preço</span>
+                <div className="preco h-100 d-flex">
+                    <p className="text-align-center">100,50</p>
+                </div>
             </li>
         )
         
@@ -36,27 +39,63 @@ class SeuPedido extends React.Component {
                                 <PutTyperOfFood 
                                 type="p" 
                                 name="Calabresa" 
-                                text="é isso"/>
+                                text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas."/>
+                                <PutTyperOfFood 
+                                type="p" 
+                                name="4Queijos" 
+                                text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas."/>
                         </ul>
                     </li>
                     <li className="category-items list-group-item" >
                         <ul id="category-item-02-lasagna list-group">
-                            <li className="list-group-item"><h3>lasanha(Lasagna)</h3></li>
+                            <h3>lasanha(Lasagna)</h3>
+                            <PutTyperOfFood 
+                                type="l" 
+                                name="Calabresa" 
+                                text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas."/>
+                                <PutTyperOfFood 
+                                type="l" 
+                                name="4Queijos" 
+                                text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas."/>
                         </ul>
                     </li>
                     <li className="category-items list-group-item" >
                         <ul id="category-item-03-calzone list-group">
-                            <li className="list-group-item"><h3>Calzone</h3></li>
+                            <h3>Calzone</h3>
+                            <PutTyperOfFood 
+                                type="c" 
+                                name="Calabresa" 
+                                text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas."/>
+                                <PutTyperOfFood 
+                                type="c" 
+                                name="4Queijos" 
+                                text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas."/>
                         </ul>
                     </li>
                     <li className="category-items list-group-item" >
                         <ul id="category-item-04-drinks list-group">
-                            <li className="list-group-item"><h3>Bebidas(Drinks)</h3></li>
+                            <h3>Bebidas(Drinks)</h3>
+                            <PutTyperOfFood 
+                                type="b" 
+                                name="Calabresa" 
+                                text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas."/>
+                                <PutTyperOfFood 
+                                type="b" 
+                                name="4Queijos" 
+                                text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas."/>
                         </ul>
                     </li>
                     <li className="category-items list-group-item" >
                         <ul id="category-item-04-deserts list-group">
-                            <li className="list-group-item"><h3>Sobremesas(Deserts)</h3></li>
+                            <h3>Sobremesas(Deserts)</h3>
+                            <PutTyperOfFood 
+                                type="d" 
+                                name="Calabresa" 
+                                text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas."/>
+                                <PutTyperOfFood 
+                                type="d" 
+                                name="4Queijos" 
+                                text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas."/>
                         </ul>
                     </li>
                 </ul>
