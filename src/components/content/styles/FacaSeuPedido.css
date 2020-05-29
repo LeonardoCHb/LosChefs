@@ -1,0 +1,21 @@
+/*moldando checkbox*/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+.box {
+    width: 50px;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    
+}
+small, span, h3, h5, p{
+    text-shadow: none;
+}
+.category-items{
+    border: none;
+    
+}
+
+    

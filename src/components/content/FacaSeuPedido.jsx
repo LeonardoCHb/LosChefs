@@ -2,21 +2,22 @@ import React from 'react'
 import './styles/FacaSeuPedido.css'
 
 //funçao que adiciona os items(li) do cardapio no compnente principal do faça seu pedido
-function CheckBox(){
+function CheckBox(props){
+    
     return (
         <div class="box">
-            <input id="one" type="checkbox"/>
-            <span class="check"></span>
-            <label for="one">Check me.</label>
+            <input type="checkbox"/>
+            <span class="check" onClick="ButtonAction"></span>
         </div>
     )
 }
+
 function PutTyperOfFood(props) {
         return (
             <li className="list-group-item d-flex justify-content-between">
                 <div className="d-flex div-item w-75">
                     <CheckBox />
-                    <label>
+                    <label >
                         <h5 id={props.type+"-"+props.name}>{props.name}</h5>
                         <small class="form-text text-muted">{props.text}</small>
                     </label>
