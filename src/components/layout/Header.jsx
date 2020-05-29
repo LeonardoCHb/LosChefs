@@ -6,7 +6,7 @@ import './styles/Header.css';
 function Header() {
     return (
         /*tras responsividade a nav em certos tipos de tamanho e alguns estilos*/
-            <nav className="navbar navbar-expand-sm navbar-dark bg-dark text-dark">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark text-white fixed-top">
     
             
                     <NavLink to="" className="navbar-brand">Pizzaria X</NavLink>
