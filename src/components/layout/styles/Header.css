@@ -38,7 +38,21 @@
     background-color: transparent !important;
 }
 
-/*Estilo do BURGER*/
-.custom-toggler.navbar-toggler { 
-    border-color: white; 
-} 
+/*------Estilo do BURGER------*/
+
+/*Edita a biblioteca padrao*/
+.navbar-toggler{
+    outline: none !important;
+    border: none !important;
+}
+
+/*Estilos*/
+.fa-bars{
+    font-size: 1.8rem;
+    -webkit-text-stroke-width: 0.9px;
+    -webkit-text-stroke-color: black !important;
+    color: white;
+}
+.fa-bars:hover {
+    color: red;
+}

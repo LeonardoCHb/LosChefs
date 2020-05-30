@@ -12,7 +12,7 @@ function Header() {
                     <NavLink to="" className="navbar-brand">Pizzaria X</NavLink>
         
                     <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-                        <span className="navbar-toggler-icon"></span>
+                            <i className="fa fa-bars"></i>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarMenu">
         
