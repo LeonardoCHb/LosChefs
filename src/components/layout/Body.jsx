@@ -66,11 +66,11 @@ function Body() {
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <i className="fas fa-arrow-right"></i>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <i class="fas fa-arrow-left"></i>
                     <span class="sr-only">Next</span>
                 </a>
             </div>

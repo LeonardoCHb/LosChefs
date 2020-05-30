@@ -23,11 +23,10 @@
 }
 
 /*Estilos para as setas do bg slider*/
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+.fa-arrow-left,
+.fa-arrow-right {
   height: 100px;
   width: 100px;
-  outline: black;
   background-size: 30%, 30%;
   
 }
@@ -37,6 +36,8 @@
 .carousel-control-next{
       bottom: 30%;     
 }
+
+
 
 .carousel-item, .img-fluid {
   width:100%;
