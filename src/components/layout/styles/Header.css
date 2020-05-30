@@ -3,15 +3,42 @@
     src: url(../../fonts/Kaushan_Script/KaushanScript-Regular.ttf);
 }
 
-/*Estilos Globais*/
+/*------------Estilos Globais---------------*/
 * {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 40px;
-    text-shadow: 5px 5px 5px black;
+    font-family: 'Kaushan Script', cursive;    
 }
 
+/*--------Estilos dos textos da Landing Page---------*/
+
+/*Estilos da Logo*/
+
+.navbar-brand, .navbar-nav .nav-item .nav-link{
+    -webkit-text-stroke-width: 0.9px;
+    -webkit-text-stroke-color: black !important;
+    font-size: 1.7rem;
+}
+/*Estilos das mensagens do bg slider*/
+
+.carousel-caption h3, .carousel-caption p{
+    -webkit-text-stroke-width: 0.9px;
+    -webkit-text-stroke-color: black !important;
+}
+.carousel-caption h3 {font-size: 2.5rem;}
+.carousel-caption p {font-size: 1.8rem;}
+
+/*Estilo de hover na logo e nos nav items*/
+
+.navbar-dark .navbar-brand,
+.navbar-nav .nav-item .nav-link:hover {
+    color: red;
+}
 
 /*Transparencia do bg nav*/
 .bg-dark {
     background-color: transparent !important;
 }
+
+/*Estilo do BURGER*/
+.custom-toggler.navbar-toggler { 
+    border-color: white; 
+} 

@@ -6,7 +6,7 @@ import './styles/Header.css';
 function Header() {
     return (
         /*tras responsividade a nav em certos tipos de tamanho e alguns estilos*/
-            <nav className="navbar navbar-expand-xl navbar-dark bg-dark text-white fixed-top">
+            <nav className="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
     
             
                     <NavLink to="" className="navbar-brand">Pizzaria X</NavLink>
@@ -21,7 +21,7 @@ function Header() {
                                 <NavLink to="/" className="nav-link">Home</NavLink>
                             </li>
                             <li className="nav-item ">
-                                <NavLink to="/SeuPedido" className="nav-link">Faca seu Pedido</NavLink>
+                                <NavLink to="/SeuPedido" className="nav-link ">Faca seu Pedido</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink to="/Cardapio" className="nav-link">Reservas</NavLink>

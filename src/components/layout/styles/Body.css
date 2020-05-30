@@ -1,4 +1,4 @@
-
+/*Estilos gerais*/
 .carousel-caption {
     top: 60%;
     bottom: auto;
@@ -29,12 +29,10 @@
   width: 100px;
   outline: black;
   background-size: 30%, 30%;
-  border-radius: 50%;
-  border: 1px solid black;
- 
+  
 }
 
-/*Configs dos arrows do bg slider img fluid*/
+/*Posicionamento dos arrows do bg slider*/
 .carousel-control-prev,
 .carousel-control-next{
       bottom: 30%;     
@@ -45,7 +43,7 @@
   height:100%;
 }
 
-/* Media Queries*/
+/* Media Queries(responsividade)*/
 
 @media only screen and (max-width:1500px) {
   .carousel-caption {
@@ -56,10 +54,10 @@
 
 @media only screen and (max-width:1199px) {
       .carousel-caption h3 {
-        font-size: 32px;
+        font-size: 1.6rem;
       }
       .carousel-caption p {
-        font-size: 20px;
+        font-size: 1.3rem;
       }
 }
 
@@ -70,7 +68,9 @@
 }
 
 @media only screen and (max-width:767px) {
-  
+  .carousel-caption h3 {
+    font-size: 1.4rem;
+  }
 }
 
 @media only screen and (max-width:575px) {
