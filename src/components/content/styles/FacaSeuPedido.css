@@ -10,6 +10,14 @@
     user-select: none;
     
 }
+#check-white{
+    cursor: pointer;
+}
+.checks{
+    
+    position: absolute;
+    cursor: pointer;
+}
 small, span, h3, h5, p{
     text-shadow: none;
 }
