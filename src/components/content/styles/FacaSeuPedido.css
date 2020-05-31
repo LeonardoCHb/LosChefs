@@ -1,12 +1,21 @@
 
-/**/
 .li-container{
     height: auto;
     align-items: center;
+    user-select: none;
 }
-.texts-food{
-    top: 0;
-    display: block;
-    position: relative;
+#check-white{
+    cursor: pointer;
+}
+.checks{
+    
+    position: absolute;
+    cursor: pointer;
+}
+small, span, h3, h5, p{
+    text-shadow: none;
+}
+.category-items{
+    border: none;
 
 }
