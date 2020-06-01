@@ -2,6 +2,7 @@ import React from 'react'
 
 import Body from '../layout/Body'
 import Header from '../layout/Header'
+import Footer from '../layout/Footer'
 
 
 function Home (){
@@ -9,6 +10,7 @@ function Home (){
         <React.Fragment>
             <Header/>
             <Body/>
+            <Footer/>
         </React.Fragment>
     )
 }

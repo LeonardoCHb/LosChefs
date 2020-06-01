@@ -9,7 +9,7 @@ function Header() {
             <nav className="navbar navbar-expand-xl navbar-dark bg-dark">
                     
             
-                    <NavLink to="" className="navbar-brand">Pizzaria X</NavLink>
+                    <NavLink to="" className="navbar-brand">Los Chefs</NavLink>
         
                     <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                             <i className="fa fa-bars"></i>

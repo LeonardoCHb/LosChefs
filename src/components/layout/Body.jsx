@@ -32,7 +32,7 @@ function Body() {
                     <div className="carousel-item active">
                         <img className="d-block img-fluid" src={recepcao} alt="First slide" />
                         <div className="carousel-caption d-none d-md-block ">
-                            <h3 className="overflow-hidden">PIZZA X</h3>
+                            <h3 className="overflow-hidden" id="title">Los Chefs</h3>
                             <p>A melhor Pizza do MUNDO</p>
                         </div>
                     </div>
@@ -100,30 +100,31 @@ function Body() {
 
             </div>{/*carousel*/}
 
+            {/*-------------Main section com display das imagens redondas--------------*/}
             <section className="page-section" >
                 <div className="container-fluid mt-5 py-5">
-
+                    {/*Titulo*/}    
                     <div className="text-center mt-5 py-5">
-                        <h2 className="section-heading text-uppercase overflow-hidden">Porque escolher a gente?</h2>
+                        <h2 className="section-heading text-uppercase overflow-hidden" id="section_title">Porque escolher a gente?</h2>
                     </div>
-
+                     {/*-----------Items da Main section-------*/}  
                     <div className="row text-center ">
                         <div className="col-md-4">
                         <img className="rounded-circle mb-5" src={Botton_Food} alt="Foto da Equipe" width="140" height="140"/>
-                            <h4 className="overflow-hidden">Fazendas Particulares</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                            <h4 className="overflow-hidden" id="section_item">Fazendas Particulares</h4>
+                            <p id="item_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         </div>
 
                         <div className="col-md-4">
                         <img className="rounded-circle mb-5" src={Botton_Estrutura2} alt="Foto da Equipe" width="140" height="140"/>
-                            <h4 className="overflow-hidden">Estrutura de Ponta</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. </p>
+                            <h4 className="overflow-hidden" id="section_item">Estrutura de Ponta</h4>
+                            <p id="item_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. </p>
                         </div>
 
                         <div className="col-md-4">
                         <img className="rounded-circle mb-5" src={Botton_Chefs} alt="Foto da Equipe" width="140" height="140"/>
-                            <h4 className="overflow-hidden">Eleita a melhor Equipe de Brasilia</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. </p>
+                            <h4 className="overflow-hidden" id="section_item">Eleita a melhor Equipe de Brasilia</h4>
+                            <p id="item_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. </p>
                         </div>
                     </div>
 
