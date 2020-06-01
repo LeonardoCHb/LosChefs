@@ -8,6 +8,10 @@
     font-family: 'Kaushan Script', cursive;
     overflow-x: hidden;    
 }
+/*overflow bug fix*/
+header,footer,main,div * {
+    overflow: hidden;
+}
 
 /*--------Estilos dos textos da Landing Page---------*/
 
