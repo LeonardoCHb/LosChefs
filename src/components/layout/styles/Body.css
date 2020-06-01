@@ -23,12 +23,11 @@
 }
 
 /*Estilos para as setas do bg slider*/
-.fa-arrow-left,
-.fa-arrow-right {
+.bi-arrow-left,
+.bi-arrow-right {
   height: 100px;
   width: 100px;
   background-size: 30%, 30%;
-  
 }
 
 /*Posicionamento dos arrows do bg slider*/

@@ -5,7 +5,8 @@
 
 /*------------Estilos Globais---------------*/
 * {
-    font-family: 'Kaushan Script', cursive;    
+    font-family: 'Kaushan Script', cursive;
+    overflow-x: hidden;    
 }
 
 /*--------Estilos dos textos da Landing Page---------*/
