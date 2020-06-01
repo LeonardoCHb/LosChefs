@@ -1,12 +1,17 @@
 import React from "react"
 import './styles/Body.css'
 
+/*Import das imagens*/
 import Pizza4k from "../img/Pizza4k.jpg"
 import FIRE from "../img/FIRE.jpg"
 import kitchen from "../img/kitchen.jpg"
 import ingredients from "../img/ingredients.jpg"
 import recepcao from "../img/recepcao.jpg"
 import Pizza_Deliciosa from "../img/Pizza_Deliciosa.jpg"
+import Botton_Chefs from "../img/Botton_Chefs.jpg"
+import Botton_Estrutura2 from "../img/Botton_Estrutura2.jpg"
+import Botton_Food from "../img/Botton_Food.jpg"
+
 
 function Body() {
     return (
@@ -23,11 +28,11 @@ function Body() {
                 </ol>
                 <div className="carousel-inner">
 
-                    {/*--------Items do bg slider--------*/}
+                    {/*--------Itens do bg slider--------*/}
                     <div className="carousel-item active">
                         <img className="d-block img-fluid" src={recepcao} alt="First slide" />
-                        <div className="carousel-caption d-none d-md-block">
-                            <h3>PIZZA X</h3>
+                        <div className="carousel-caption d-none d-md-block ">
+                            <h3 className="overflow-hidden">PIZZA X</h3>
                             <p>A melhor Pizza do MUNDO</p>
                         </div>
                     </div>
@@ -35,7 +40,7 @@ function Body() {
                     <div className="carousel-item">
                         <img className="d-block img-fluid" src={Pizza_Deliciosa} alt="Second slide" />
                         <div className="carousel-caption d-none d-md-block">
-                            <h3>A MELHOR PIZZARIA DE BRASILIA!!</h3>
+                            <h3 className="overflow-hidden">A MELHOR PIZZARIA DE BRASILIA!!</h3>
                             <p>MIAN MIAN DELICIOUS WOOOOO</p>
                         </div>
                     </div>
@@ -43,7 +48,7 @@ function Body() {
                     <div className="carousel-item">
                         <img className="d-block img-fluid" src={FIRE} alt="Third slide" />
                         <div className="carousel-caption d-none d-md-block">
-                            <h3>O MELHOR PREPARO PARA VOCE!</h3>
+                            <h3 className="overflow-hidden">O MELHOR PREPARO PARA VOCE!</h3>
                             <p>Contamos com uma estrutura especializada para o melhor atendimento ao cliente</p>
                         </div>
                     </div>
@@ -51,7 +56,7 @@ function Body() {
                     <div className="carousel-item">
                         <img className="d-block img-fluid" src={kitchen} alt="Third slide" />
                         <div className="carousel-caption d-none d-md-block">
-                            <h3>Profissionais extremamente qualificados</h3>
+                            <h3 className="overflow-hidden">Profissionais extremamente qualificados</h3>
                             <p>Os grandes chefes de Brasilia estao aqui!</p>
                         </div>
                     </div>
@@ -59,14 +64,14 @@ function Body() {
                     <div className="carousel-item">
                         <img className="d-block img-fluid" src={Pizza4k} alt="Third slide" />
                         <div className="carousel-caption d-none d-md-block">
-                            <h3>DO SEU GOSTO!</h3>
+                            <h3 className="overflow-hidden">DO SEU GOSTO!</h3>
                             <p>Aqui voce pode personalizar a pizza da forma que voce quiser!</p>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img className="d-block img-fluid" src={ingredients} alt="Third slide" />
                         <div className="carousel-caption d-none d-md-block">
-                            <h3>Selecionados para voce!</h3>
+                            <h3 className="overflow-hidden">Selecionados para voce!</h3>
                             <p>Nossos ingredients sao cultivaos em fazendas 100% organicas</p>
                         </div>
                     </div>
@@ -78,7 +83,7 @@ function Body() {
                     {/*Arrows do Bootstrap*/}
                 <svg class="bi bi-arrow-left" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 0 1 0 .708L3.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
-                    <path fill-rule="evenodd" d="M2.5 8a.5.5 0 0 1 .5-.5h10.5a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    <path fill-rule="evenodd" d="M2.5 8a.5.5 0 0 1 .5-.5h10.5a.5.5 0 0 1 0 1h3a.5.5 0 0 1-.5-.5z"/>
                 </svg>
                <span class="sr-only">Previous</span>
                 </a>
@@ -104,16 +109,19 @@ function Body() {
 
                     <div className="row text-center ">
                         <div className="col-md-4">
+                        <img className="rounded-circle mb-5" src={Botton_Food} alt="Foto da Equipe" width="140" height="140"/>
                             <h4 className="overflow-hidden">Fazendas Particulares</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         </div>
 
                         <div className="col-md-4">
+                        <img className="rounded-circle mb-5" src={Botton_Estrutura2} alt="Foto da Equipe" width="140" height="140"/>
                             <h4 className="overflow-hidden">Estrutura de Ponta</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. </p>
                         </div>
 
                         <div className="col-md-4">
+                        <img className="rounded-circle mb-5" src={Botton_Chefs} alt="Foto da Equipe" width="140" height="140"/>
                             <h4 className="overflow-hidden">Eleita a melhor Equipe de Brasilia</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. </p>
                         </div>
