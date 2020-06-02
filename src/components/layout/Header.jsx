@@ -7,7 +7,7 @@ import './styles/Header.css';
 function Header() {
     return (
         /*tras responsividade a nav em certos tipos de tamanho e alguns estilos*/
-            <nav className="navbar navbar-expand-xl navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-xl navbar-dark bg-dark ">
                     
             
                     <NavLink to="" className="navbar-brand">Los Chefs</NavLink>

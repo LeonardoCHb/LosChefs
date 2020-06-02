@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles/FacaSeuPedido.css'
 import Header from '../layout/Header.jsx'
+import Footer from '../layout/Footer'
 
 //funçao que adiciona os items(li) do cardapio no compnente principal do faça seu pedido
 function CheckBox(props) {
@@ -46,8 +47,8 @@ class SeuPedido extends React.Component {
         return (
             
         <React.Fragment>
-            <Header />
-            <main role="main"> 
+            <Header/>
+            <main role="main" className="container py-5 my-5"> 
                 <form>
                     <ul className="category-menu list-group">
                         <li className="category-items list-group-item" >
@@ -176,6 +177,7 @@ class SeuPedido extends React.Component {
                     </ul>
                 </form >
             </main>
+            <Footer/>
         </React.Fragment>
         )
     }

@@ -25,11 +25,18 @@
   color: red !important;
 }
 /*Estilos para as setas do bg slider*/
-.bi-arrow-left,
-.bi-arrow-right {
+#arrow_l,
+#arrow_r {
+  font-size: 2.3rem;
   height: 100px;
   width: 100px;
   background-size: 30%, 30%;
+  -webkit-text-stroke-width: 0.9px;
+  -webkit-text-stroke-color: black !important;
+}
+#arrow_l:hover,
+#arrow_r:hover {
+  color: red;
 }
 
 /*Posicionamento dos arrows do bg slider*/
