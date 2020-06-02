@@ -24,6 +24,26 @@
 #title {
   color: red !important;
 }
+/*Estilo para as imagens da logo*/
+#title_logo {
+  margin: 0px;
+  padding: 0px;
+}
+
+#logo_caption {
+  top: 0%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#logo_img{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+   padding: 0px;
+  width: 60%;
+  height: 60%;
+}
 /*Estilos para as setas do bg slider*/
 #arrow_l,
 #arrow_r {
