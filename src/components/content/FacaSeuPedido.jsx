@@ -3,14 +3,35 @@ import './styles/FacaSeuPedido.css'
 import Header from '../layout/Header.jsx'
 import Footer from '../layout/Footer'
 
-//funçao que adiciona os items(li) do cardapio no compnente principal do faça seu pedido
-function CheckBox(props) {
+//componente para escolher o tamanho da pizza que aparecera com o toggle
+function ChooseSize(props) {
 
     return (
-        <div class="box">
+        <div id={"size-" + props.name} className={props.name + " choose-size collapse"}>
+            <ul>
+                <li className="d-flex justify-content-between">
+                    <a className="w-25" data-toggle="collapse" href={"#size-" + props.name}>Grande</a>
+    <p className="w-75">{parseFloat(props.preco) + parseFloat(5) + "0"}</p>
+                </li>
+                <li className="d-flex justify-content-between">
+                    <a className="w-25" data-toggle="collapse" href={"#size-" + props.name}>Média</a>
+                    <p className="w-75">{props.preco}</p>
+                </li>
+                <li className="d-flex justify-content-between">
+                    <a className="w-25" data-toggle="collapse" href={"#size-" + props.name}>Pequena</a>
+                    <p className="w-75">{parseFloat(props.preco) - parseFloat(5) + "0"}</p>
+                </li>
+            </ul>
+        </div>
+    )
+}
 
+//funçao que adiciona os items(li) do cardapio no compnente principal do faça seu pedido
+function CheckBox(props) {
+    return (
+        <div class="box">
             <span class="glyphicon glyphicon-ok-circle"></span>
-            <svg id={"check-black-" + props.name} data-toggle="collapse" data-target={"." + props.name} class={props.name + " checks collapse mult-collapse bi bi-check-circle-fill"} width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg id={"check-black-" + props.name} data-toggle="collapse" data-target={"." + props.name} class={props.name + " checks collapse bi bi-check-circle-fill"} width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
             </svg>
             <svg id={"check-white-" + props.name} data-toggle="collapse" data-target={"." + props.name} class={props.name + " checks collapse show bi bi-check-circle"} width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -21,23 +42,25 @@ function CheckBox(props) {
     )
 }
 
+class PutTyperOfFood extends React.Component {
 
-function PutTyperOfFood(props) {
-    return (
-
-        <li className="list-group-item d-flex justify-content-between">
-            <div className="d-flex div-item w-75">
-                <CheckBox name={props.name} />
-                <label >
-                    <h5 id={props.type + "-" + props.name}>{props.name}</h5>
-                    <small class="form-text text-muted">{props.text}</small>
-                </label>
-            </div>
-            <div className="preco h-100 d-flex">
-                <p className="text-align-center">{props.preco}</p>
-            </div>
-        </li>
-    )
+    render() {
+        return (<React.Fragment>
+            <li className="list-group-item d-flex justify-content-between w-100">
+                <div className="d-flex div-item w-75">
+                    <CheckBox name={this.props.name} />
+                    <label >
+                        <h5 id={this.props.type + "-" + this.props.name}>{this.props.name}</h5>
+                        <small class="form-text text-muted">{this.props.text}</small>
+                    </label>
+                </div>
+                <div className="preco w-10 d-flex">
+                    <p className="text-align-center w-10">{this.props.preco}</p>
+                </div>
+            </li>
+            <ChooseSize name={this.props.name} size={this.props.size} preco={this.props.preco}/>
+        </React.Fragment >)
+    }
 
 }
 
