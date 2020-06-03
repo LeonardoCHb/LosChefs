@@ -1,8 +1,19 @@
+/*Backgrounds*/
 #cardapio {
-    background-image: url(../../img/MenuBackground.jpg);
+    background-image: url(../../img/hand-drawning.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
+.category-items{
+    background-color: rgba(0, 0, 0, 0.904)
+}
+.each-item{
+    border: 2px solid black;
+    margin-bottom: 2px;
+}
+
+/*button customization*/
 .box {
     width: 50px;
     margin: 25px 0;
@@ -18,10 +29,41 @@
     position: absolute;
     cursor: pointer;
 }
-small, span, h3, h5, p{
-    text-shadow: none;
-}
+/*text puttypeoffood customization*/
 .category-items{
     border: none;
+}
 
+h3{
+   -webkit-text-stroke-color:black;
+   -webkit-text-stroke-width: 0.5px;
+    color: rgb(255, 0, 0);
+}
+h5{
+   -webkit-text-stroke-color:rgb(85, 0, 0);
+   -webkit-text-stroke-width: 0.5px;
+    color: rgb(0, 0, 0);
+}
+.preco{
+   -webkit-text-stroke-color:rgb(0, 0, 0);
+   -webkit-text-stroke-width: 0.5px;
+    color: rgb(10, 9, 9);
+}
+/*changing comportament of a and a:hover on the toggled div*/
+.a-size{
+    -webkit-text-stroke-color:rgb(0, 0, 0);
+   -webkit-text-stroke-width: 0.2px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+.a-size:hover{
+    -webkit-text-stroke-color:rgb(0, 0, 0);
+   -webkit-text-stroke-width: 0.2px;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-size: 1.3em;
+}
+/*toggled div*/
+.preco-tg{
+    color: white;
 }
