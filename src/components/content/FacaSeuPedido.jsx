@@ -5,25 +5,29 @@ import Footer from '../layout/Footer'
 
 //componente para escolher o tamanho da pizza que aparecera com o toggle
 function ChooseSize(props) {
-
-    return (
+    if(props.type !== "b" && props.type !== "d"){
+       return (
         <div id={"size-" + props.name} className={props.name + " choose-size collapse"}>
             <ul>
                 <li className="d-flex justify-content-between">
-                    <a className="w-25" data-toggle="collapse" href={"#size-" + props.name}>Grande</a>
-    <p className="w-75">{parseFloat(props.preco) + parseFloat(5) + "0"}</p>
+                    <a className="a-size w-25" data-toggle="collapse" href={"#size-" + props.name}>Grande</a>
+                    <p className="preco-tg w-75">{parseFloat(props.preco) + parseFloat(5) + "0"}</p>
                 </li>
                 <li className="d-flex justify-content-between">
-                    <a className="w-25" data-toggle="collapse" href={"#size-" + props.name}>Média</a>
-                    <p className="w-75">{props.preco}</p>
+                    <a className="a-size w-25" data-toggle="collapse" href={"#size-" + props.name}>Média</a>
+                    <p className="preco-tg w-75">{props.preco}</p>
                 </li>
                 <li className="d-flex justify-content-between">
-                    <a className="w-25" data-toggle="collapse" href={"#size-" + props.name}>Pequena</a>
-                    <p className="w-75">{parseFloat(props.preco) - parseFloat(5) + "0"}</p>
+                    <a className="a-size w-25" data-toggle="collapse" href={"#size-" + props.name}>Pequena</a>
+                    <p className="preco-tg w-75">{parseFloat(props.preco) - parseFloat(5) + "0"}</p>
                 </li>
             </ul>
         </div>
-    )
+    ) 
+    }
+    else
+        return (<div></div>)
+    
 }
 
 //funçao que adiciona os items(li) do cardapio no compnente principal do faça seu pedido
@@ -46,10 +50,10 @@ class PutTyperOfFood extends React.Component {
 
     render() {
         return (<React.Fragment>
-            <li className="list-group-item d-flex justify-content-between w-100">
+            <li className="each-item list-group-item d-flex justify-content-between w-100">
                 <div className="d-flex div-item w-75">
                     <CheckBox name={this.props.name} />
-                    <label >
+                    <label className="">
                         <h5 id={this.props.type + "-" + this.props.name}>{this.props.name}</h5>
                         <small class="form-text text-muted">{this.props.text}</small>
                     </label>
@@ -58,7 +62,7 @@ class PutTyperOfFood extends React.Component {
                     <p className="text-align-center w-10">{this.props.preco}</p>
                 </div>
             </li>
-            <ChooseSize name={this.props.name} size={this.props.size} preco={this.props.preco}/>
+            <ChooseSize name={this.props.name} size={this.props.size} preco={this.props.preco} type={this.props.type}/>
         </React.Fragment >)
     }
 
@@ -75,126 +79,177 @@ class SeuPedido extends React.Component {
                 <form>
                     <ul className="category-menu list-group">
                         <li className="category-items list-group-item" >
-                            <ul id="category-item-01-pizza list-group">
+                            <ul className="category-item-01-pizza list-group">
                                 <h3>Pizzas</h3>
                                 <PutTyperOfFood
                                     type="p"
                                     name="Calabresa"
                                     text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas."
-                                    preco="65,50"
+                                    preco="65.50"
                                 />
                                 <PutTyperOfFood
                                     type="p"
                                     name="QuatroQueijos"
                                     text="Mussarela, requeijão, parmesão ralado, provolone."
-                                    preco="60,70"
+                                    preco="60.70"
                                 />
                                 <PutTyperOfFood
                                     type="p"
                                     name="FrangeComRequijão"
                                     text="Frango desfiado, cebola e requeijão"
-                                    preco="65,70"
+                                    preco="65.70"
                                 />
                                 <PutTyperOfFood
                                     type="p"
                                     name="Margherita"
                                     text="Mussarela, tomate e manjericão."
-                                    preco="55,70"
+                                    preco="55.70"
                                 />
                                 <PutTyperOfFood
                                     type="p"
                                     name="Pepperoni"
                                     text="Mussarela e pepperoni"
-                                    preco="60,50"
+                                    preco="60.50"
                                 />
                                 <PutTyperOfFood
                                     type="p"
                                     name="Presunto"
                                     text="Mussarela e presunto"
-                                    preco="50,70"
+                                    preco="50.70"
                                 />
                                 <PutTyperOfFood
                                     type="p"
                                     name="Napolitana"
                                     text="Mussarela, tomate e parmesão ralado."
-                                    preco="55,70"
+                                    preco="55.70"
                                 />
                                 <PutTyperOfFood
                                     type="p"
                                     name="Américana"
                                     text="Mussarela, pepperoni, champignon, cebola e pimentão verde."
-                                    preco="80,00"
+                                    preco="82.50"
                                 />
                                 <PutTyperOfFood
                                     type="p"
                                     name="FrangoPhiladelphia"
                                     text="Mussarela, frango desfiado, Philadelphia e parmesão ralado."
-                                    preco="85,70"
+                                    preco="85.70"
                                 />
                                 <PutTyperOfFood
                                     type="p"
                                     name="Toscana"
                                     text="Mussarela, calabresa, requeijão, azeitona preta, cebola, tomate e manjericão."
-                                    preco="75,00"
+                                    preco="75.50"
                                 />
                                 <PutTyperOfFood
                                     type="p"
                                     name="DeLuxe"
                                     text="Mussarela, pepperoni, calabresa, champignon, cebola e pimentão verde."
-                                    preco="85,70"
+                                    preco="85.70"
                                 />
                             </ul>
                         </li>
                         <li className="category-items list-group-item" >
-                            <ul id="category-item-02-lasagna list-group">
+                            <ul className="category-item-02-lasagna list-group">
                                 <h3>lasanha(Lasagna)</h3>
                                 <PutTyperOfFood
                                     type="l"
-                                    name="Calabresa"
-                                    text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas." />
+                                    name="Bolonhesa"
+                                    text="Massa italiana com carne moída artesanal e um molho bolonhesa" 
+                                    preco="40.50"
+                                    />
                                 <PutTyperOfFood
                                     type="l"
-                                    name="4Queijos"
-                                    text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas." />
-                            </ul>
-                        </li>
-                        <li className="category-items list-group-item" >
-                            <ul id="category-item-03-calzone list-group">
-                                <h3>Calzone</h3>
+                                    name="FrangoComRequeijão"
+                                    text="Massa italiana com frango assado e um molho de requeijão com alho poró"
+                                    preco="45.50" 
+                                    />
                                 <PutTyperOfFood
-                                    type="c"
+                                    type="l"
+                                    name="QuatroQueijos"
+                                    text="Massa italiana com parmesão,mussarela,requeijão e provolone"
+                                    preco="40.50" 
+                                    />
+                                <PutTyperOfFood
+                                    type="l"
+                                    name="PeitoDePeru"
+                                    text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas."
+                                    preco="42.50" 
+                                    />
+                                <PutTyperOfFood
+                                    type="l"
                                     name="Calabresa"
-                                    text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas." />
+                                    text="Massa italiana com finas fatias de calabresa artesanal,mussarela e parmesão"
+                                    preco="42.50" 
+                                    />
                                 <PutTyperOfFood
-                                    type="c"
-                                    name="4Queijos"
-                                    text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas." />
+                                    type="l"
+                                    name="CamarãoAoMolhoBranco"
+                                    text="Massa italiana com cremoso molho camarões e alho poró, mussarela e parmesão."
+                                    preco="50.00" 
+                                    />
                             </ul>
                         </li>
                         <li className="category-items list-group-item" >
-                            <ul id="category-item-04-drinks list-group">
+                            <ul className="category-item-04-drinks list-group">
                                 <h3>Bebidas(Drinks)</h3>
                                 <PutTyperOfFood
                                     type="b"
-                                    name="Calabresa"
-                                    text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas." />
+                                    name="ÁguaNatural-300ml"
+                                    text=""
+                                    preco="7.50"
+                                    />
                                 <PutTyperOfFood
                                     type="b"
-                                    name="4Queijos"
-                                    text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas." />
+                                    name="ÁguaComGás-300ml"
+                                    text=""
+                                    preco="8.50"
+                                    />
+                                <PutTyperOfFood
+                                    type="b"
+                                    name="CastilloMurviedro-Espanha"
+                                    text=""
+                                    preco="75.00"
+                                    />
+                                <PutTyperOfFood
+                                    type="b"
+                                    name="Corinto-Chile"
+                                    text=""
+                                    preco="73.00"
+                                    />
+                                <PutTyperOfFood
+                                    type="b"
+                                    name="CatenaMalbec-2017"
+                                    text=""
+                                    preco="185.00"
+                                    />
+                                    
                             </ul>
                         </li>
                         <li className="category-items list-group-item" >
-                            <ul id="category-item-04-deserts list-group">
+                            <ul className="category-item-04-deserts list-group">
                                 <h3>Sobremesas(Deserts)</h3>
                                 <PutTyperOfFood
                                     type="d"
-                                    name="Calabresa"
-                                    text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas." />
+                                    name="PetitGâteau"
+                                    text="" 
+                                    preco="20.00"
+                                    />
                                 <PutTyperOfFood
                                     type="d"
-                                    name="4Queijos"
-                                    text="Mozarela, linguiça calabresa artesanal, molho de tomates frescos e azeitonas pretas." />
+                                    name="MousseDeLimão"
+                                    text="" 
+                                    preco="15.00"/>
+                                <PutTyperOfFood
+                                    type="d"
+                                    name="CheeseCake"
+                                    text="" 
+                                    preco="20.00"/>
+                                <PutTyperOfFood
+                                    type="d"
+                                    name="TortaDeChocolate"
+                                    text="" 
+                                    preco="15,00"/>
                             </ul>
                         </li>
                     </ul>
