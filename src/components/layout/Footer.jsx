@@ -10,7 +10,7 @@ function Footer() {
 
             <div Style="background-color: red">
                 <div className="container" id="social_footer">
-                    <div className="row py-4 d-flex align-items-center">
+                    <div className="row py-3 d-flex align-items-center">
 
                         <div className="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
 
@@ -18,7 +18,7 @@ function Footer() {
 
                         </div>
 
-                        <div className="col-md-6 col-lg-7 text-center text-md-right">
+                        <div className="col-md-4 col-lg-7 text-center text-md-right">
 
                             <a className="fb-ic" href="https://facebook.com">
                                 <i className="fa fa-facebook-square mr-4" id="footer_text"></i>
@@ -34,9 +34,9 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="container text-center text-md-left mt-5" >
+            <div className="container text-center text-md-left mt-3" >
 
-                <div className="row mt-3">
+                <div className="row mt-2">
 
                     <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <h6 id="footer_title">Los Chefs</h6>
@@ -103,7 +103,7 @@ function Footer() {
                 </div>
             </div>
 
-            <div className="footer-copyright text-center py-3 " Style="background-color: red" id="footer_main"><h6>© 2020 Copyright:Los Chefs</h6></div>
+            <div className="footer-copyright text-center pt-2 " Style="background-color: red" id="footer_main"><h6>© 2020 Copyright:Los Chefs</h6></div>
         </footer>
     )
 }

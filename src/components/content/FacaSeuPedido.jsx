@@ -69,9 +69,9 @@ class SeuPedido extends React.Component {
     render() {
         return (
             
-        <React.Fragment>
+        <div id="cardapio">
             <Header/>
-            <main role="main" className="container py-5 my-5"> 
+            <main role="main" className="container py-5 my-5" > 
                 <form>
                     <ul className="category-menu list-group">
                         <li className="category-items list-group-item" >
@@ -201,7 +201,7 @@ class SeuPedido extends React.Component {
                 </form >
             </main>
             <Footer/>
-        </React.Fragment>
+        </div>
         )
     }
 }

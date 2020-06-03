@@ -98,7 +98,7 @@ function Body() {
 
             {/*-------------Main section com display das imagens redondas--------------*/}
             <section className="page-section" >
-                <div className="container-fluid mt-5 py-5">
+                <div className="container-fluid my-5 py-5">
                     {/*Titulo*/}    
                     <div className="text-center mt-5 py-5">
                         <h2 className="section-heading text-uppercase overflow-hidden" id="section_title">Porque escolher a gente?</h2>

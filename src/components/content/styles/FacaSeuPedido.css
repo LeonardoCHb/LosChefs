@@ -1,4 +1,8 @@
-
+#cardapio {
+    background-image: url(../../img/MenuBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .box {
     width: 50px;
     margin: 25px 0;
