@@ -61,3 +61,10 @@ header,footer,main,div * {
 .fa-bars:hover {
     color: red;
 }
+/*Ajustando os items da navbar*/
+#nav_item {
+    color: white!important;
+}
+#nav_item:hover {
+    color: red!important;
+}
