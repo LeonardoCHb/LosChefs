@@ -24,10 +24,11 @@
 #title {
   color: red !important;
 }
-/*Estilo para as imagens da logo*/
+/*-------Estilo para as imagens da LOGO---------*/
 #title_logo {
   margin: 0px;
   padding: 0px;
+ 
 }
 
 #logo_caption {

@@ -28,7 +28,7 @@ function Header() {
                                 <NavLink to="/Cardapio" className="nav-link" id="nav_item">Reservas</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/Contatos" className="nav-link" id="nav_item">Contatos</NavLink>
+                                <a href="#main_footer" className="nav-link" id="nav_item">Contatos</a>
                             </li>
                             <li className="nav-item">
                                 <NavLink to="/SobreNos" className="nav-link" id="nav_item">Sobre Nos</NavLink>
