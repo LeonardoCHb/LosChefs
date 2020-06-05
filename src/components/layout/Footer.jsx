@@ -20,12 +20,12 @@ function Footer() {
 
                         <div className="col-md-4 col-lg-7 text-center text-md-right">
 
-                            <a className="fb-ic" href="https://facebook.com">
-                                <i className="fa fa-facebook-square mr-4" id="footer_text"></i>
+                            <a className="fb-ic" href="https://facebook.com" >
+                                <i className="fa fa-facebook-square mr-4" id="footer_text" id="icone"></i>
                             </a>
 
-                            <a className="ins-ic" href="https://instagram.com">
-                                <i className="fa fa-instagram" id="footer_text"></i>
+                            <a className="ins-ic" href="https://instagram.com" >
+                                <i className="fa fa-instagram" id="footer_text" id="icone"></i>
                             </a>
 
 
@@ -43,7 +43,7 @@ function Footer() {
 
                         <hr className=" accent-2 mb-4 mt-0 d-inline-block mx-auto" Style="width: 60px;" />
 
-                        <p id="footer_text">blalbablalbalblblabllbalbalblablabla</p>
+                        <p id="footer_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
 
                     </div>
 
@@ -103,7 +103,7 @@ function Footer() {
                 </div>
             </div>
 
-            <div className="footer-copyright text-center pt-2 " Style="background-color: red" id="footer_main"><h6>© 2020 Copyright:Los Chefs</h6></div>
+            <div className="footer-copyright text-center pt-2 " Style="background-color: white" id="footer_botton"><h6>© 2020 Copyright:Los Chefs</h6></div>
         </footer>
     )
 }

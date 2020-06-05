@@ -61,7 +61,7 @@ function SobreNos() {
                                 <div className="circle"><img className="rounded-circle mb-5" src={TL_04} alt="Foto da Equipe" width="169" height="169"/></div>
                                 <div className="content">
                                     <span className="year">2011-2020</span>
-                                    <h4 className="title">Web Developer</h4>
+                                    <h4 className="title">Mantem sua excelência durante décadas</h4>
                                     <p className="description">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non lectus justo. Nam ultricies laoreet massa sed maximus. Curabitur tristique sagittis scelerisque. Vivamus posuere nisi quis tortor interdum, in finibus risus convallis. Suspendisse efficitur lacus a nulla commodo, sit amet vestibulum nibh.
                                     </p>

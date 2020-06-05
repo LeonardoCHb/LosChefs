@@ -3,7 +3,13 @@
     
 
 }
+#footer_botton {
+    color: red;
+}
 #footer_main {
+    color: white!important;
+}
+#icone {
     color: white;
 }
 
@@ -15,3 +21,9 @@
 #footer_text {
     color: white;
 }
+/*Smooth scroll*/
+html {
+    scroll-behavior: smooth;
+}
+  
+  
