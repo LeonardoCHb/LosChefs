@@ -21,11 +21,11 @@ function Footer() {
                         <div className="col-md-4 col-lg-7 text-center text-md-right">
 
                             <a className="fb-ic" href="https://facebook.com" >
-                                <i className="fa fa-facebook-square mr-4" id="footer_text" id="icone"></i>
+                                <i className="icone fa fa-facebook-square mr-4" id="footer_text" ></i>
                             </a>
 
                             <a className="ins-ic" href="https://instagram.com" >
-                                <i className="fa fa-instagram" id="footer_text" id="icone"></i>
+                                <i className="icone fa fa-instagram" id="footer_text" ></i>
                             </a>
 
 
