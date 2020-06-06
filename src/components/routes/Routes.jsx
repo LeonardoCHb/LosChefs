@@ -2,7 +2,7 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
 import  Home  from '../content/Home'
-import  SeuPedido  from '../content/FacaSeuPedido'
+import  SeuPedido  from '../content/FacaSeuPedido/FacaSeuPedido'
 import Contatos from '../content/Contatos'
 import SobreNos from '../content/SobreNos'
 import Reservas from '../content/Reservas'
