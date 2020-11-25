@@ -6,7 +6,7 @@ import './styles/Footer.css';
 
 function Footer() {
     return (
-        <footer className="page-footer font-small unique-color-dark" id="main_footer">
+        <footer className="md-6" id="main_footer">
 
             <div Style="background-color: red">
                 <div className="container" id="social_footer">
@@ -27,7 +27,6 @@ function Footer() {
                             <a className="ins-ic" href="https://instagram.com" >
                                 <i className="icone fa fa-instagram" id="footer_text" ></i>
                             </a>
-
 
                         </div>
 
@@ -71,7 +70,7 @@ function Footer() {
 
                         <hr className="deep-red accent-2 mb-4 mt-0 d-inline-block mx-auto" Style="width: 60px;" />
                         <p>
-                            <NavLink to="" className="footer-link" id="footer_text">Seja um Investido!</NavLink>
+                            <NavLink to="" className="footer-link" id="footer_text">Seja um Investidor!</NavLink>
                         </p>
                         <p>
                             <NavLink to="" className="footer-link" id="footer_text">Projetos Sociais</NavLink>
