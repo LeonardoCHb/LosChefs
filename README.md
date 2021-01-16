@@ -1,4 +1,4 @@
-# 🍕Projeto_Pizzaria🍕
+# 🍕Projeto Pizzaria🍕
 
 Workout project, simulating a real website
 
