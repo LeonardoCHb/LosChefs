@@ -1,4 +1,9 @@
 /*Backgrounds*/
+#MainContainer{
+    /*background-image: url("../../img/hand-drawning.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;*/
+}
 /*General css styles*/
 a{
     color: black;
@@ -20,11 +25,37 @@ a:hover{
     flex-direction: column;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
-    margin: auto;
+    margin: 25px auto 80px auto;
     width: 25rem;
     height: 10rem;    
 }
 #cepText{
     margin: 1.5rem 3rem 0.5rem 3rem;
 }
-/**/
+/*Franquias part*/
+#procurarFranquias{
+    margin: auto;
+    width: 75em;
+    height: 30em;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 0);
+}
+#displayFranquias{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 75em;
+    height: 28em;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#porLocalInput{
+    width: 40em;
+    height: 2em;
+    margin: 0.5em 17.5em;
+    border-radius: 0.5em;
+    text-align: center;
+
+}

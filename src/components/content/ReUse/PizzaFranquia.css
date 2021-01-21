@@ -10,10 +10,11 @@ p{
 }
 #Container{
    display: flex;
-   width: 37rem;
+   width: 32rem;
    height: 10rem;
    box-shadow: 0 0 0.5em black;
    border-radius: 2%;
+   background-color: rgb(221, 221, 221);
 }
 #ContentDiv{
     margin: 15px;
