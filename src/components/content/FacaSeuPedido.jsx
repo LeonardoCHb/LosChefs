@@ -1,4 +1,6 @@
 import React from 'react'
+import {FaGooglePlay} from 'react-icons/fa';
+import {GiSmartphone} from 'react-icons/gi'
 import './styles/FacaSeuPedido.css'
 import Header from '../layout/Header.jsx'
 import Footer from '../layout/Footer'
@@ -26,7 +28,19 @@ const SeuPedido = () => {
                         <PizzaFranquia Nome="Noroeste" Endereço="SCHGN 702/703 Bloco G LOJA 47"/>
                     </div>
                 </div>
-                <div id="buttonsApp">buttonsApp</div>
+                <div id="AppsPart">
+                    <p>Faça o download do nosso aplicativo</p>
+                    <div id="buttonsApp">
+                        <div className="Stores">
+                            <FaGooglePlay />
+                            <p className="StoresText">Google Play</p>
+                        </div>
+                        <div className="Stores">
+                            <GiSmartphone />
+                            <p className="StoresText">App Store</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <Footer/>

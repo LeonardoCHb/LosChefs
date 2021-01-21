@@ -59,3 +59,28 @@ a:hover{
     text-align: center;
 
 }
+/*Downloa App part*/
+#AppsPart{
+
+    width: 40em;
+    margin: 9em auto 3em auto;
+    text-align: center;
+}
+#buttonsApp{
+    display: flex;
+    justify-content: center;
+}
+.Stores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5em;
+    width: 8em;
+    margin: 0 1em;
+    cursor: pointer;
+}
+.StoresText{
+    margin: 0.5em 0;
+}
