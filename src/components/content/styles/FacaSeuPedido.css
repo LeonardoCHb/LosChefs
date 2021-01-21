@@ -1,6 +1,30 @@
 /*Backgrounds*/
+/*General css styles*/
+a{
+    color: black;
+    text-decoration: underline;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
 #MainContent{
     display: flex;
     flex-direction: column;
     margin: 6rem auto 3rem auto;
 }
+/*Informe seu cep style*/
+#informeSeuCep{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    width: 25rem;
+    height: 10rem;    
+}
+#cepText{
+    margin: 1.5rem 3rem 0.5rem 3rem;
+}
+/**/
