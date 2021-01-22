@@ -17,7 +17,7 @@ const SeuPedido = () => {
                         <input type="text"/>
                         <button>BUSCAR</button>
                     </div>
-                    <a href="http://www.buscacep.correios.com.br/sistemas/buscacep/default.cfm" target="blank">Não sei meu CEP</a>
+                    <a id="FaceSeuPedidoAnchor" href="http://www.buscacep.correios.com.br/sistemas/buscacep/default.cfm" target="blank">Não sei meu CEP</a>
                 </div>
                 <div id="procurarFranquias">
                     <input id="porLocalInput" type="text" placeholder="Procure por cidade"/>

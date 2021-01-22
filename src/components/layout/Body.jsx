@@ -3,7 +3,7 @@ import './styles/Body.css'
 
 /*Import das imagens*/
 import Pizza4k from "../img/CL_Pizza4k.jpg"
-import FIRE from "../img/CL_FIRE.svg"
+import FIRE from "../img/CL_FIRE.jpg"
 import kitchen from "../img/CL_kitchen.jpg"
 import ingredients from "../img/CL_ingredients.jpg"
 import recepcao from "../img/CL_recepcao.jpg"
