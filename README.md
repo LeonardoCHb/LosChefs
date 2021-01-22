@@ -1,4 +1,4 @@
-# 🍕Projeto Pizzaria🍕
+# 🍕Los Chef's 🍕
 
 Workout project, simulating a real website
 
