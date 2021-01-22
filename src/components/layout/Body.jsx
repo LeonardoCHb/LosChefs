@@ -105,19 +105,19 @@ function Body() {
                      {/*-----------Items da Main section-------*/}  
                     <div className="row text-center ">
                         <div className="col-md-4">
-                        <img className="rounded-circle mb-5" src={Botton_Food} alt="Foto da Equipe" width="140" height="140"/>
+                        <img id="BottonBodyImg" className="rounded-circle mb-5" src={Botton_Food} alt="Foto da Equipe" width="140" height="140"/>
                             <h4 id="section_item">Fazendas Particulares</h4>
                             <p id="item_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         </div>
 
                         <div className="col-md-4">
-                        <img className="rounded-circle mb-5" src={Botton_Estrutura2} alt="Foto da Equipe" width="140" height="140"/>
+                        <img id="BottonBodyImg" className="rounded-circle mb-5" src={Botton_Estrutura2} alt="Foto da Equipe" width="140" height="140"/>
                             <h4 id="section_item">Estrutura de Ponta</h4>
                             <p id="item_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. </p>
                         </div>
 
                         <div className="col-md-4">
-                        <img className="rounded-circle mb-5" src={Botton_Chefs} alt="Foto da Equipe" width="140" height="140"/>
+                        <img id="BottonBodyImg" className="rounded-circle mb-5" src={Botton_Chefs} alt="Foto da Equipe" width="140" height="140"/>
                             <h4 id="section_item">Eleita a melhor Equipe de Brasilia</h4>
                             <p id="item_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. </p>
                         </div>
