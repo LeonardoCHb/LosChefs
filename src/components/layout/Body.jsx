@@ -2,14 +2,14 @@ import React from "react"
 import './styles/Body.css'
 
 /*Import das imagens*/
-import Pizza4k from "../img/Pizza4k.jpg"
-import FIRE from "../img/FIRE.jpg"
-import kitchen from "../img/kitchen.jpg"
-import ingredients from "../img/ingredients.jpg"
-import recepcao from "../img/recepcao.jpg"
-import Pizza_Deliciosa from "../img/Pizza_Deliciosa.jpg"
+import Pizza4k from "../img/CL_Pizza4k.jpg"
+import FIRE from "../img/CL_FIRE.jpg"
+import kitchen from "../img/CL_kitchen.jpg"
+import ingredients from "../img/CL_ingredients.jpg"
+import recepcao from "../img/CL_recepcao.jpg"
+import Pizza_Deliciosa from "../img/CL_Pizza_Deliciosa.jpg"
 import Botton_Chefs from "../img/Botton_Chefs.jpg"
-import Botton_Estrutura2 from "../img/Botton_Estrutura2.jpg"
+import Botton_Estrutura2 from "../img/Botton_Estrutura.jpg"
 import Botton_Food from "../img/Botton_Food.jpg"
 import logo from "../img/logo.png"
 
