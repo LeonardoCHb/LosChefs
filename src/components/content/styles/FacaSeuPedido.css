@@ -59,10 +59,20 @@ a:hover{
     text-align: center;
 
 }
+
+@media(max-width: 1200px){
+    #procurarFranquias{
+        width: 37.5em;
+    }
+    #porLocalInput{
+        width: 20em;
+        margin: 0.5em 8.75em ;
+    }
+}
 /*Downloa App part*/
 #AppsPart{
 
-    width: 40em;
+    width: 20em;
     margin: 9em auto 3em auto;
     text-align: center;
 }
