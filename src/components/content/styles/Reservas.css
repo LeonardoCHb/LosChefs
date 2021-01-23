@@ -1,3 +1,17 @@
+/*General Css styles*/
+#MainContent{
+    margin: 5em auto;
+}
+h1{
+    margin: auto;
+}
+/*Choose you unit part*/
+#UnitDivs{
+    display: flex;
+    margin: auto;
+    width: 25em;
+    justify-content: space-around;
+}
 /*Form Part*/
 #MainForm{
     display: flex;

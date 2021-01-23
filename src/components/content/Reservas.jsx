@@ -3,6 +3,7 @@ import './styles/Reservas.css'
 
 import Header from '../layout/Header'
 import Footer from '../layout/Footer'
+import Unit from '../content/ReUse/Unit'
 
 const Reservas = () => {
     return (
@@ -10,8 +11,12 @@ const Reservas = () => {
             <Header/>
             <div id="MainContent">
                 <div id="imgAndText"></div>
+                <h1>Escolha a unidade que você deseja fazer a sua pré-reserva</h1>
+                <div id="UnitDivs">
+                    <Unit Nome="AsaNorte 702" />
+                    <Unit Nome="AsaSul 504" />
+                </div>
                 <div id="FormPart">
-                    <h1>Escolha a unidade que você deseja fazer a sua pré-reserva</h1>
                     <form id="MainForm">
                         <label className="InputField">
                             Nome Completo:
