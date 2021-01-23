@@ -2,14 +2,14 @@ import React from "react"
 import './styles/Body.css'
 
 /*Import das imagens*/
-import Pizza4k from "../img/Pizza4k.jpg"
-import FIRE from "../img/FIRE.jpg"
-import kitchen from "../img/kitchen.jpg"
-import ingredients from "../img/ingredients.jpg"
-import recepcao from "../img/recepcao.jpg"
-import Pizza_Deliciosa from "../img/Pizza_Deliciosa.jpg"
+import Pizza4k from "../img/CL_Pizza4k.jpg"
+import FIRE from "../img/CL_FIRE.jpg"
+import kitchen from "../img/CL_kitchen.jpg"
+import ingredients from "../img/CL_ingredients.jpg"
+import recepcao from "../img/CL_recepcao.jpg"
+import Pizza_Deliciosa from "../img/CL_Pizza_Deliciosa.jpg"
 import Botton_Chefs from "../img/Botton_Chefs.jpg"
-import Botton_Estrutura2 from "../img/Botton_Estrutura2.jpg"
+import Botton_Estrutura2 from "../img/Botton_Estrutura.jpg"
 import Botton_Food from "../img/Botton_Food.jpg"
 import logo from "../img/logo.png"
 
@@ -105,19 +105,19 @@ function Body() {
                      {/*-----------Items da Main section-------*/}  
                     <div className="row text-center ">
                         <div className="col-md-4">
-                        <img className="rounded-circle mb-5" src={Botton_Food} alt="Foto da Equipe" width="140" height="140"/>
+                        <img id="BottonBodyImg" className="rounded-circle mb-5" src={Botton_Food} alt="Foto da Equipe" width="140" height="140"/>
                             <h4 id="section_item">Fazendas Particulares</h4>
                             <p id="item_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         </div>
 
                         <div className="col-md-4">
-                        <img className="rounded-circle mb-5" src={Botton_Estrutura2} alt="Foto da Equipe" width="140" height="140"/>
+                        <img id="BottonBodyImg" className="rounded-circle mb-5" src={Botton_Estrutura2} alt="Foto da Equipe" width="140" height="140"/>
                             <h4 id="section_item">Estrutura de Ponta</h4>
                             <p id="item_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. </p>
                         </div>
 
                         <div className="col-md-4">
-                        <img className="rounded-circle mb-5" src={Botton_Chefs} alt="Foto da Equipe" width="140" height="140"/>
+                        <img id="BottonBodyImg" className="rounded-circle mb-5" src={Botton_Chefs} alt="Foto da Equipe" width="140" height="140"/>
                             <h4 id="section_item">Eleita a melhor Equipe de Brasilia</h4>
                             <p id="item_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. </p>
                         </div>
