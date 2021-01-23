@@ -12,28 +12,38 @@ const Reservas = () => {
                 <div id="imgAndText"></div>
                 <div id="FormPart">
                     <h1>Escolha a unidade que você deseja fazer a sua pré-reserva</h1>
-                    <form action="post" id="MainForm">
+                    <form id="MainForm">
                         <label className="InputField">
                             Nome Completo:
-                             <input type="text"/>
+                             <input className="InputItself" type="text"/>
                         </label>
                         <label className="InputField">
                             E-mail:
-                             <input type="E-mail"/>
+                             <input className="InputItself" type="E-mail"/>
                         </label>
                         <label className="InputField">
                             Quantidade de pessoas:
-                             <input type="number"/>
+                             <select className="InputItself">
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                                 <option value="6">6</option>
+                                 <option value="7">7</option>
+                                 <option value="8">8</option>
+                                 <option value="9+">9+</option>
+                             </select>
                         </label>
                         <label className="InputField">
                             Telefone para contato:
-                             <input type="tel"/>
+                             <input className="InputItself" type="tel"/>
                         </label>
                         <label className="InputField">
                             Data da Reserva:
-                             <input type="date"/>
+                             <input className="InputItself" type="date" min="2021-03-01"/>
                         </label>
-                        <button>FAÇA A SUA PRÉ-RESERVA</button>
+                        <button id="ReserveButton">FAÇA A SUA PRÉ-RESERVA</button>
                     </form>
                 </div>
             </div>
