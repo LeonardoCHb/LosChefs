@@ -1,4 +1,4 @@
-.MyUnit{
+#MyUnit{
     display: flex;
     border: 0.1em solid black;
     background-color:black;
@@ -10,3 +10,4 @@
     border-radius: 0.3em;
     cursor: pointer;
 }
+
