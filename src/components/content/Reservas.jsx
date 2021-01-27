@@ -3,7 +3,7 @@ import './styles/Reservas.css'
 
 import Header from '../layout/Header'
 import Footer from '../layout/Footer'
-import Unit from '../content/ReUse/Unit'
+import Unit from '../content/ReUse/Unit.js'
 
 const Reservas = () => {
     return (
