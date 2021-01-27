@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {useContext, useEffect, useState} from 'react'
+import {UnitsContext} from '../../context/Units'
+
 import {FaGooglePlay} from 'react-icons/fa';
 import {GiSmartphone} from 'react-icons/gi'
 import './styles/FacaSeuPedido.css'
 import Header from '../layout/Header.jsx'
 import Footer from '../layout/Footer'
-import PizzaFranquia from './ReUse/PizzaFranquia'
+// import PizzaFranquia from './ReUse/PizzaFranquia'
 
 const SeuPedido = () => {
     return (
@@ -22,10 +24,7 @@ const SeuPedido = () => {
                 <div id="procurarFranquias">
                     <input id="porLocalInput" type="text" placeholder="Procure por cidade"/>
                     <div id="displayFranquias">
-                        <PizzaFranquia Nome="AsaNorte" Endereço="SCHGN 702/703 Bloco G LOJA 47"/>
-                        <PizzaFranquia Nome="Cruzeiro" Endereço="SCHGN 702/703 Bloco G LOJA 47"/>
-                        <PizzaFranquia Nome="Sudoeste" Endereço="SCHGN 702/703 Bloco G LOJA 47"/>
-                        <PizzaFranquia Nome="Noroeste" Endereço="SCHGN 702/703 Bloco G LOJA 47"/>
+                        {/* /* {Unit.map(Element => <PizzaFranquia key={Element.Nome} Nome={Element.Nome} Endereço={Element.Endereço}/>)} */} 
                     </div>
                 </div>
                 <div id="AppsPart">
