@@ -2,6 +2,7 @@ import React from 'react'
 import 'font-awesome/css/font-awesome.min.css';
 
 import { NavLink } from 'react-router-dom'
+import home_logo from '../img/home_Logo.png'
 import './styles/Header.css';
 
 function Header() {
@@ -10,16 +11,18 @@ function Header() {
             <nav className="navbar navbar-expand-xl navbar-dark bg-dark">
                     
             
-                    <NavLink to="" className="navbar-brand">Los Chefs</NavLink>
+                    <NavLink to="" className="navbar-brand">
+                        <img className="home_logo" src={home_logo} alt="" />
+                    </NavLink>
         
                     <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                             <i className="fa fa-bars"></i>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarMenu">
+                    <div className="navbar-collapse collapse" id="navbarMenu">
         
                         <ul className="navbar-nav ml-auto">
-                            <li className="nav-item">
-                                <NavLink to="/" className="nav-link">Home</NavLink>
+                            <li className="nav-item active">
+                                <NavLink to="/" className="nav-link" id="nav_item">Home</NavLink>
                             </li>
                             <li className="nav-item ">
                                 <NavLink to="/SeuPedido" className="nav-link " id="nav_item">Faca seu Pedido</NavLink>
