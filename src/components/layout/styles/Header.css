@@ -68,7 +68,18 @@ header,footer,main,div * {
 /*Ajustando os items da navbar*/
 #nav_item {
     color: white!important;
+    padding: 15px;
 }
 #nav_item:hover {
     color: red!important;
+}
+
+#navbarMenu{
+    margin-top: -100px!important;
+}
+
+.home_logo {
+    max-width: 200px;
+    height: 200px;
+    margin-top: -28px;
 }
