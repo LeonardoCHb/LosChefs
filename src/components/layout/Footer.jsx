@@ -39,6 +39,7 @@ function Footer() {
                 <div className="row mt-2">
 
                     <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        
                         <h6 id="footer_title">Los Chefs</h6>
 
                         <hr className=" accent-2 mb-4 mt-0 d-inline-block mx-auto" Style="width: 60px;" />

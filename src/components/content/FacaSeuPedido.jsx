@@ -1,14 +1,26 @@
-import React, {useContext, useEffect, useState} from 'react'
-import {UnitsContext} from '../../context/Units'
+import React, {useState, useRef}  from 'react'
 
 import {FaGooglePlay} from 'react-icons/fa';
 import {GiSmartphone} from 'react-icons/gi'
 import './styles/FacaSeuPedido.css'
 import Header from '../layout/Header.jsx'
 import Footer from '../layout/Footer'
-// import PizzaFranquia from './ReUse/PizzaFranquia'
-
+import PizzaFranquia from './ReUse/PizzaFranquia'
+import {GetLocalStorage, PizzariasQueue, SearchByLocation} from '../../Storage/LocalStorage'
 const SeuPedido = () => {
+    const {Locations, setLocations} = useState([{}])
+    const InputLocation = useRef();
+    const InputCep = useRef();
+    function HandleLocations(){
+        // console.log(InputLocation)
+        // if( InputLocation.current.value =! undefined){
+        //     const type = InputLocation.current.value
+        //     console.log(type)
+        // }
+    }
+    function HandleCep(){
+        console.log(InputCep)
+    }
     return (
         <div id="MainContainer">
             <Header/>
@@ -16,15 +28,14 @@ const SeuPedido = () => {
                 <div id="informeSeuCep">
                     <p id="cepText">Informe seu CEP e faça o pedido na unidade mais proxíma</p>
                     <div id="buttonArea">
-                        <input type="text"/>
-                        <button>BUSCAR</button>
+                        <input ref={InputCep} type="text"/>
+                        <button  onClick={HandleCep}>BUSCAR</button>
                     </div>
                     <a id="FaceSeuPedidoAnchor" href="http://www.buscacep.correios.com.br/sistemas/buscacep/default.cfm" target="blank">Não sei meu CEP</a>
                 </div>
                 <div id="procurarFranquias">
-                    <input id="porLocalInput" type="text" placeholder="Procure por cidade"/>
+                    <input ref={InputLocation} id="porLocalInput" type="text" placeholder="Procure por cidade" onChange={HandleLocations()}/>
                     <div id="displayFranquias">
-                        {/* /* {Unit.map(Element => <PizzaFranquia key={Element.Nome} Nome={Element.Nome} Endereço={Element.Endereço}/>)} */} 
                     </div>
                 </div>
                 <div id="AppsPart">
