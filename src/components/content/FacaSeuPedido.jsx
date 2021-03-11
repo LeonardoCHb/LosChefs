@@ -6,20 +6,33 @@ import './styles/FacaSeuPedido.css'
 import Header from '../layout/Header.jsx'
 import Footer from '../layout/Footer'
 import PizzaFranquia from './ReUse/PizzaFranquia'
-import {GetLocalStorage, PizzariasQueue, SearchByLocation} from '../../Storage/LocalStorage'
-const SeuPedido = () => {
-    const {Locations, setLocations} = useState([{}])
-    const InputLocation = useRef();
-    const InputCep = useRef();
-    function HandleLocations(){
-        // console.log(InputLocation)
-        // if( InputLocation.current.value =! undefined){
-        //     const type = InputLocation.current.value
-        //     console.log(type)
-        // }
+import SetLocalStorage,{ArrayOfData} from '../../Storage/LocalStorage'
+const SeuPedido = () => {  
+    SetLocalStorage()
+    const DataPizzarias = ArrayOfData();
+    const [Locations, setLocations] = useState(() => {
+        return DataPizzarias;
+    })
+    const InputLocation = useRef(null);
+    const InputCep = useRef(null);
+    async function HandleLocations(){
+        const CurrentArray = [];
+        await DataPizzarias.map((element) => {
+            const NewElement = element.Nome.toLowerCase().replace(" ", "")
+            const NewInput = InputLocation.current.value.toLowerCase().replace(" ", "")
+            const lenghInput = NewInput.length
+            if(NewInput === NewElement.substring(0, lenghInput))
+                CurrentArray.push(element)
+        })
+        setLocations(CurrentArray)
     }
-    function HandleCep(){
-        console.log(InputCep)
+    async function HandleCep(){
+        const CurrentArray = [];
+        await DataPizzarias.map((element) => {
+            if(element.Cep.substring(0, 3) == InputCep.current.value.substring(0, 3))
+                CurrentArray.push(element)
+        })
+        setLocations(CurrentArray)
     }
     return (
         <div id="MainContainer">
@@ -34,8 +47,11 @@ const SeuPedido = () => {
                     <a id="FaceSeuPedidoAnchor" href="http://www.buscacep.correios.com.br/sistemas/buscacep/default.cfm" target="blank">Não sei meu CEP</a>
                 </div>
                 <div id="procurarFranquias">
-                    <input ref={InputLocation} id="porLocalInput" type="text" placeholder="Procure por cidade" onChange={HandleLocations()}/>
+                    <input ref={InputLocation} id="porLocalInput" type="text" placeholder="Procure por cidade" onChange={HandleLocations}/>
                     <div id="displayFranquias">
+                        {Locations.map((element) => {
+                            return <PizzaFranquia Nome={element.Nome} Endereço={element.Endereco} Estrelas={element.Estrelas} ></PizzaFranquia>
+                        })}
                     </div>
                 </div>
                 <div id="AppsPart">
