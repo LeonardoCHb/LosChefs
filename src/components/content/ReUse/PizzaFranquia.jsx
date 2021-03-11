@@ -3,7 +3,7 @@ import {BiTimeFive} from 'react-icons/bi'
 import {AiFillStar} from 'react-icons/ai'
 import './PizzaFranquia.css'
 import logo from '../../img/logo.png'
-const PizzaFranquia = ({Nome, Endereço}) => {
+const PizzaFranquia = ({Nome, Endereço, Estrelas}) => {
     return (
         <div id="Container">
             <img id="logoFranquia" src={logo} alt="logo"/>
@@ -13,7 +13,7 @@ const PizzaFranquia = ({Nome, Endereço}) => {
                 <div id="IconsPart">
                     <div className="Icons">
                         <AiFillStar/>
-                        <p>4.8</p>
+                        <p>{Estrelas}</p>
                     </div>
                     <div className="Icons">
                         <BiTimeFive/>
