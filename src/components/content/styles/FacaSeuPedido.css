@@ -43,11 +43,9 @@ a:hover{
 #displayFranquias{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    margin: auto;
     width: 75em;
     height: 28em;
+    overflow-y: scroll;
     border-radius: 0.5rem;
     background-color: rgba(255, 255, 255, 0.5);
 }
@@ -63,6 +61,12 @@ a:hover{
 @media(max-width: 1200px){
     #procurarFranquias{
         width: 37.5em;
+    }
+    #displayFranquias{
+        width: 37.5em;
+        height: 100rem;
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
     #porLocalInput{
         width: 20em;
