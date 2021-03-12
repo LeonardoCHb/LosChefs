@@ -1,18 +1,10 @@
 /*Backgrounds*/
 #MainContainer{
-    /*background-image: url("../../img/hand-drawning.jpg") ;
+    background-image: url("../../img/hand-drawning.jpg") ;
     background-repeat: no-repeat;
-    background-size: 100% 100%;*/
+    background-size: 100% 100%;
 }
 /*General css styles*/
-a#FaceSeuPedidoAnchor{
-    color: black;
-    text-decoration: underline;
-}
-a:hover{
-    color: white;
-    text-decoration: none;
-}
 
 #MainContent{
     display: flex;
@@ -24,13 +16,30 @@ a:hover{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     margin: 25px auto 80px auto;
     width: 25rem;
-    height: 10rem;    
+    height: 10rem;
+    border: solid black 0.3rem;
+}
+#CepButton{
+    outline: none;
+    border-radius: 0.2rem;
+}
+#CepButton:hover{
+    color: rgb(148, 0, 0);
 }
 #cepText{
     margin: 1.5rem 3rem 0.5rem 3rem;
+    color: black;
+}
+#CepAnchor{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+#CepAnchor:hover{
+    color: rgb(122, 0, 0);
+    text-decoration: none;
 }
 /*Franquias part*/
 #procurarFranquias{
@@ -55,7 +64,6 @@ a:hover{
     margin: 0.5em 17.5em;
     border-radius: 0.5em;
     text-align: center;
-
 }
 
 @media(max-width: 1200px){
@@ -79,22 +87,34 @@ a:hover{
     width: 20em;
     margin: 9em auto 3em auto;
     text-align: center;
+
+}
+#AppText{
+    color: black;
+    font-size: 20px;
 }
 #buttonsApp{
     display: flex;
     justify-content: center;
 }
+
 .Stores{
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 1);
     border-radius: 0.5em;
     width: 8em;
     margin: 0 1em;
     cursor: pointer;
+    color: rgb(54, 54, 54);
 }
 .StoresText{
     margin: 0.5em 0;
+    color: rgb(97, 97, 97);
+}
+.Stores:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }

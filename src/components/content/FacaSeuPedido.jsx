@@ -42,9 +42,9 @@ const SeuPedido = () => {
                     <p id="cepText">Informe seu CEP e faça o pedido na unidade mais proxíma</p>
                     <div id="buttonArea">
                         <input ref={InputCep} type="text"/>
-                        <button  onClick={HandleCep}>BUSCAR</button>
+                        <button id="CepButton"  onClick={HandleCep}>BUSCAR</button>
                     </div>
-                    <a id="FaceSeuPedidoAnchor" href="http://www.buscacep.correios.com.br/sistemas/buscacep/default.cfm" target="blank">Não sei meu CEP</a>
+                    <a id="CepAnchor" href="http://www.buscacep.correios.com.br/sistemas/buscacep/default.cfm" target="blank">Não sei meu CEP</a>
                 </div>
                 <div id="procurarFranquias">
                     <input ref={InputLocation} id="porLocalInput" type="text" placeholder="Procure por cidade" onChange={HandleLocations}/>
@@ -55,7 +55,7 @@ const SeuPedido = () => {
                     </div>
                 </div>
                 <div id="AppsPart">
-                    <p>Faça o download do nosso aplicativo</p>
+                    <p id="AppText">Faça o download do nosso aplicativo</p>
                     <div id="buttonsApp">
                         <div className="Stores">
                             <FaGooglePlay />
