@@ -1,10 +1,18 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import './styles/Reservas.css'
 
 import Header from '../layout/Header'
 import Footer from '../layout/Footer'
 
 const Reservas = () => {
+    const AsaNorteRef = useRef(null);
+    const AsaSulRef = useRef(null);
+    function handleForm(){
+        alert("Sua reserva esta sendo analizada")
+    }
+    function handleUnitsChosing(){
+        console.log("working")
+    }
     return (
         <div>
             <Header/>
@@ -12,6 +20,12 @@ const Reservas = () => {
                 <div id="imgAndText"></div>
                 <h1>Escolha a unidade que você deseja fazer a sua pré-reserva</h1>
                 <div id="UnitDivs">
+                   <div ref={AsaNorteRef} className="Unit" onClick={handleUnitsChosing}>
+                       <p className="UnitText">Asa Norte - 504</p>
+                   </div>
+                   <div ref={AsaSulRef} className="Unit" onClick={handleUnitsChosing}>
+                       <p className="UnitText" >Asa Sul - 306 </p>
+                   </div>
                 </div>
                 <div id="FormPart">
                     <form id="MainForm">
@@ -45,7 +59,7 @@ const Reservas = () => {
                             Data da Reserva:
                              <input className="InputItself" type="date" min="2021-03-01"/>
                         </label>
-                        <button id="ReserveButton">FAÇA A SUA PRÉ-RESERVA</button>
+                        <button id="ReserveButton" onClick={handleForm}>FAÇA A SUA PRÉ-RESERVA</button>
                     </form>
                 </div>
             </div>
