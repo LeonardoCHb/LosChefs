@@ -1,78 +1,121 @@
 /*Backgrounds*/
-#cardapio {
-    background-image: url(../../img/hand-drawning.jpg);
+#MainContainer{
+    background-image: url("../../img/hand-drawning.jpg") ;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: 100% 100%;
 }
-.category-items{
-    background-color: rgba(0, 0, 0, 0.904)
+/*General css styles*/
+
+#MainContent{
+    display: flex;
+    flex-direction: column;
+    margin: 6rem auto 3rem auto;
 }
-.each-item{
-    border: 2px solid black;
-    margin-bottom: 2px;
+/*Informe seu cep style*/
+#informeSeuCep{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 25px auto 80px auto;
+    width: 25rem;
+    height: 10rem;
+    border: solid black 0.3rem;
+}
+#CepButton{
+    outline: none;
+    border-radius: 0.2rem;
+}
+#CepButton:hover{
+    color: rgb(148, 0, 0);
+}
+#cepText{
+    margin: 1.5rem 3rem 0.5rem 3rem;
+    color: black;
+}
+#CepAnchor{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+#CepAnchor:hover{
+    color: rgb(122, 0, 0);
+    text-decoration: none;
+}
+/*Franquias part*/
+#procurarFranquias{
+    margin: auto;
+    width: 75em;
+    height: 30em;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 0);
+}
+#displayFranquias{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75em;
+    height: 28em;
+    overflow-y: scroll;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#porLocalInput{
+    width: 40em;
+    height: 2em;
+    margin: 0.5em 17.5em;
+    border-radius: 0.5em;
+    text-align: center;
 }
 
-/*button customization*/
-.box {
-    width: 50px;
-    margin: 25px 0;
+@media(max-width: 1200px){
+    #procurarFranquias{
+        width: 37.5em;
+    }
+    #displayFranquias{
+        width: 37.5em;
+        height: 100rem;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    #porLocalInput{
+        width: 20em;
+        margin: 0.5em 8.75em ;
+    }
+}
+/*Downloa App part*/
+#AppsPart{
+
+    width: 20em;
+    margin: 9em auto 3em auto;
+    text-align: center;
+
+}
+#AppText{
+    color: black;
+    font-size: 20px;
+}
+#buttonsApp{
+    display: flex;
+    justify-content: center;
+}
+
+.Stores{
     display: flex;
     align-items: center;
-    user-select: none;
-}
-#check-white{
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 0.5em;
+    width: 8em;
+    margin: 0 1em;
     cursor: pointer;
+    color: rgb(54, 54, 54);
 }
-.checks{
-    
-    position: absolute;
-    cursor: pointer;
-}
-/*text puttypeoffood customization*/
-.category-items{
-    border: none;
+.StoresText{
+    margin: 0.5em 0;
+    color: rgb(97, 97, 97);
 }
 
-h3{
-   -webkit-text-stroke-color:black;
-   -webkit-text-stroke-width: 0.5px;
-    color: rgb(255, 0, 0);
-}
-h5{
-   -webkit-text-stroke-color:rgb(85, 0, 0);
-   -webkit-text-stroke-width: 0.5px;
-    color: rgb(0, 0, 0);
-}
-.preco{
-   -webkit-text-stroke-color:rgb(0, 0, 0);
-   -webkit-text-stroke-width: 0.5px;
-    color: rgb(10, 9, 9);
-}
-/*changing comportament of a and a:hover on the toggled div*/
-.a-size, .preco-tg{
-    -webkit-text-stroke-color:rgb(0, 0, 0);
-   -webkit-text-stroke-width: 0.2px;
+.Stores:hover{
     color: rgb(255, 255, 255);
-    font-size: 1.2em;
-    cursor: pointer;
-}
-.a-size:hover {
-    -webkit-text-stroke-color:rgb(0, 0, 0);
-   -webkit-text-stroke-width: 0.2px;
-    text-decoration: none;
-    color: rgb(255, 0, 0);
-    font-size: 1.3em;
-}
-.a-size:hover ~ .preco-tg{
-    -webkit-text-stroke-color:rgb(0, 0, 0);
-   -webkit-text-stroke-width: 0.2px;
-    text-decoration: none;
-    color: rgb(255, 0, 0);
-    font-size: 1.3em;
-}
-
-/*toggled div*/
-.preco-tg{
-    color: white;
+    background-color: rgb(0, 0, 0);
 }

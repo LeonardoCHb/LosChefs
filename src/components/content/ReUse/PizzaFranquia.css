@@ -1,0 +1,33 @@
+img{
+    width: 200px;
+    height: 200px;
+}
+h1{
+    font-size: 20px;
+}
+p{
+    font-size: 16px;
+}
+#Container{
+   display: flex;
+   width: 32rem;
+   height: 10rem;
+   margin: 2rem auto;
+   box-shadow: 0 0 0.5em black;
+   border-radius: 2%;
+   background-color: rgb(221, 221, 221);
+}
+#ContentDiv{
+    margin: 15px;
+}
+#IconsPart{
+    display: flex;
+ }
+.Icons{
+    display: flex;
+    margin-right: 16px;
+}
+#HorarioText{
+    font-size: 12px;
+    color: rgb(170, 0, 0);
+}
